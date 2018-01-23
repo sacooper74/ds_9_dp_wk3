@@ -1,0 +1,29 @@
+---
+title: "Week 3 Assignment"
+author: "SC"
+date: "23 January 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+
+## Week 3 Assignment
+
+23rd January 2018
+
+## Simple Plotly Plot
+
+### mtcars plot
+
+```{r cars, echo = F, message=F}
+# head(mtcars, 2)
+# table(mtcars$cyl)
+
+plot_ly(mtcars, x = ~wt, y = ~mpg, mode = "markers", color = ~disp)
+
+# https://github.com/ropensci/plotly/issues/722
+```
+
